@@ -1,0 +1,236 @@
+@font-face {
+  font-family: robotoR;
+  src: url(../css/fonts/roboto/Roboto-Regular.ttf);
+}
+body {
+  background-image: url("../images/bgLarge.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  font-family: robotoR;
+}
+.banner {
+  background-image: url("../images/ship1.svg");
+  background-color: rgb(249, 246, 246);
+    border-radius: 100px 5px 100px 5px;
+  fill: white;
+
+ 
+  width: 100vw;
+  height: 400px;
+
+
+}
+.tab2 {
+  width: 90vw;
+  margin: 0 auto;
+  margin-top: 40px;
+  background-color: rgba(19, 34, 32, 0.69);
+height: auto;
+  border-radius: 5px;
+  padding-top: 20px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.tab2 img {
+  width: 70px;
+  height: auto;
+  margin: 0 auto;
+  /* margin-top: 20px; */
+}
+.imgHolder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border: 1px solid white;
+  border-top: 1px solid rgba(0, 0, 0, 0.063);
+  outline: 1px solid white;
+  outline-offset: 2px;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  background-color: rgba(36, 35, 35, 0.529);
+}
+.formPan {
+  width: 90vw;
+  /* background-color: red; */
+}
+.signup {
+  color: white;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.age_gender input[type="number"] {
+  width: 100px;
+  background-color: unset;
+
+  border: 1px solid white;
+  border-radius: 3px;
+  padding: 12.5px 10px 12.5px 10px;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  margin: auto 0;
+  margin-right: 20px;
+}
+.age_gender {
+  display: flex;
+  margin-top: 10px;
+}
+.gender {
+  background-color: unset;
+  border: 1px solid white;
+  border-radius: 3px;
+  padding: 12.5px;
+  /* flex: 1; */
+  color: rgb(255, 255, 255);
+
+  align-items: center;
+  display: flex;
+  max-height: 50px;
+  margin: auto 0;
+  justify-content: center;
+}
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="number"],
+input[type="password"] {
+  /* background-color: rgb(255, 255, 255); */
+  background-color: unset;
+  border: 1px solid white;
+  border-radius: 3px;
+  width: 98%;
+  color: rgb(255, 255, 255);
+  /* color: rgb(39, 37, 37); */
+  font-size: 16px;
+ 
+  margin-top: 20px;
+  padding: 10px 5px 10px 5px;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+.gender:hover,
+input[type="date"]:hover,
+input[type="number"]:hover,
+input[type="password"]:hover {
+  border: 1px solid white;
+  background-color: rgb(242, 243, 204);
+  color: black;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus {
+  border-radius: 0.5px;
+  outline: 1px solid rgb(120, 188, 240);
+  outline-offset: 4px;
+  border: unset;
+  background-color: unset;
+  color: white;
+}
+.termSection label{
+  color: white;
+}
+.termSection>input{
+  visibility: hidden;
+  display: none;
+}
+.termSection{
+  margin-left: 20px;
+}
+.checkbox1{
+  display: inline-block;
+ width: 20px;
+ height: 20px;
+ padding-left: 2.5px;
+ padding-top: 2.5px;
+ border-radius: 5px;
+ border: 2px solid rgb(251, 255, 252);
+}
+.termSection input:checked~.checkbox1{
+ background-color:rgb(7, 186, 19);
+ border: 2px solid rgb(7, 186, 19);
+ 
+}
+.termSection input:hover~.checkbox1{
+  background-color:rgba(10, 172, 21, 0.563);;
+ }
+#termLabel i{
+  line-height: -10px;
+  width: 100%;
+  cursor: pointer;
+}
+.regButton{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#reg{
+  text-decoration: none;
+  background-color: rgb(10, 172, 20);
+  padding: 10px 50px  10px 50px;
+  border-radius: 2px;
+  color: white;
+}
+#reg:hover{
+  text-decoration: none;
+  background-color: rgba(10, 172, 21, 0.437);
+  padding: 10px 50px  10px 50px;
+  border-radius: 2px;
+  color: white;
+}
+
+@media (min-width:810px){
+  .banner {
+    background-image: url("../images/ship1.svg");
+    background-color: rgb(249, 246, 246);
+    
+    fill: white;
+  
+    background-size: contain;
+    border-radius: 100px 5px 100px 5px;
+  
+  }
+  
+}
+
+@media (min-width:850px){
+.rigt_left{
+  display: flex;
+  justify-content: space-evenly;
+}
+.tab2 {
+  width: 45vw;
+  margin: 0;
+  margin-top: 40px;
+}
+
+input[type="text"], input[type="email"], input[type="date"], input[type="number"], input[type="password"] {
+
+  width: 49%;
+}
+.regButton {
+  width: auto;
+}
+
+
+.hold_banner{
+  display: flex;
+  align-items: center;
+ 
+  height: inherit;
+  width: 40vw;
+}
+}
