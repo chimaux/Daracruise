@@ -57,10 +57,7 @@ height: auto;
   height: 100px;
   background-color: rgba(36, 35, 35, 0.529);
 }
-.formPan {
-  width: 90vw;
-  /* background-color: red; */
-}
+
 .signup {
   color: white;
   text-align: center;
@@ -219,7 +216,7 @@ input[type="password"]:focus {
 
 input[type="text"], input[type="email"], input[type="date"], input[type="number"], input[type="password"] {
 
-  width: 49%;
+  width: 98%;
 }
 .regButton {
   width: auto;
